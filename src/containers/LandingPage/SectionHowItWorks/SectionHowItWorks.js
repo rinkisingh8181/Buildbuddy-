@@ -7,6 +7,7 @@ import { FormattedMessage } from '../../../util/reactIntl';
 import { NamedLink } from '../../../components';
 
 import css from './SectionHowItWorks.module.css';
+import { HOW_WORKS_DATA } from '../../../util/testData';
 
 const SectionHowItWorks = props => {
   const { rootClassName, className } = props;
@@ -19,32 +20,19 @@ const SectionHowItWorks = props => {
       </div>
 
       <div className={css.steps}>
-        <div className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part1Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionHowItWorks.part1Text" />
-          </p>
-        </div>
-
-        <div className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part2Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionHowItWorks.part2Text" />
-          </p>
-        </div>
-
-        <div className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part3Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionHowItWorks.part3Text" />
-          </p>
-        </div>
+        {HOW_WORKS_DATA?.map(val => {
+          console.log('val', val);
+          return (
+            <div className={css.step} key={val?.data_id}>
+              <h2 className={css.stepTitle}>
+                <FormattedMessage id={val?.title} />
+              </h2>
+              <p>
+                <FormattedMessage id={val?.text} />
+              </p>
+            </div>
+          );
+        })}
       </div>
 
       <div className={css.createListingLink}>

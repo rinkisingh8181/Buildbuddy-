@@ -21,6 +21,7 @@
   margin: 0;
   line-height: unset;
   border-bottom-width: 2px;
+  color: brown;
 
   /* Safari bugfix: without this Safari will print placeholder to a wrong place */
   &::-webkit-input-placeholder {

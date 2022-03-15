@@ -31,6 +31,7 @@
   --failColorLight: #fff0f0;
   --attentionColor: #ffaa00;
   --attentionColorLight: #fff7f0;
+  --purpleColor: #663399;
   --bannedColorLight: var(--marketplaceColorLight);
   --bannedColorDark: var(--marketplaceColor);
 

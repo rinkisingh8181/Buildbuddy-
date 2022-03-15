@@ -51,7 +51,7 @@ const LocationSearchFormComponent = props => {
                 const searchInput = { ...restInput, onChange: searchOnChange };
                 return (
                   <LocationAutocompleteInput
-                    placeholder={intl.formatMessage({ id: 'LocationSearchForm.placeholder' })}
+                    placeholder="Hello World"
                     iconClassName={css.searchInputIcon}
                     inputClassName={css.searchInput}
                     predictionsClassName={css.searchPredictions}
