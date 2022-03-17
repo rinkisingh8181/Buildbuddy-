@@ -25,6 +25,7 @@ import SectionHero from './SectionHero/SectionHero';
 import SectionHowItWorks from './SectionHowItWorks/SectionHowItWorks';
 import SectionFilteredSearches from './SectionFilteredSearches/SectionFilteredSearches';
 import css from './LandingPage.module.css';
+import ProductCard from './ProductCard/ProductCard';
 
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
@@ -73,6 +74,11 @@ export const LandingPageComponent = props => {
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 <SectionFilteredSearches />
+              </div>
+            </li>
+            <li className={css.section}>
+              <div className={css.sectionContentFirstChild}>
+                <ProductCard isSearch={true} />
               </div>
             </li>
             <li className={css.section}>

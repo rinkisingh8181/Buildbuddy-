@@ -23,6 +23,33 @@ export const DISCOVER_DATA = [
   },
 ];
 
+export const PRODUCT_CARD_DATA = [
+  {
+    data_Id: '1',
+    title: 'Nikes',
+    image: imageForFilter1,
+    link: 'http://localhost:3000/s?pub_brand=nike',
+    desc:
+      'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available',
+  },
+  {
+    data_Id: '2',
+    title: 'Yeezys',
+    image: imageForFilter2,
+    link: 'http://localhost:3000/s?pub_brand=yeezys',
+    desc:
+      'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available',
+  },
+  {
+    data_Id: '3',
+    title: 'Converses',
+    image: imageForFilter3,
+    link: 'http://localhost:3000/s?pub_brand=converses',
+    desc:
+      'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available',
+  },
+];
+
 export const HOW_WORKS_DATA = [
   {
     data_id: 'SectionHowItWorks.titleLineOne',

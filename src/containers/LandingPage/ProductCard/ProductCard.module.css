@@ -1,0 +1,176 @@
+@import '../../../styles/propertySets.css';
+
+.title {
+  @apply --marketplaceH1FontStyles;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.filteredSearches {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+    margin-top: 33px;
+  }
+}
+
+.container {
+  background-color: white;
+  box-shadow: 10px;
+  border: rgb(221, 195, 195) solid;
+  border-width: 0px 1px 1px 1px;
+  padding-bottom: 10px;
+}
+
+.label {
+  height: 30px;
+  width: 120px;
+  background-color: black;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  top: 13.5rem;
+  left: 12.8rem;
+  border-top-left-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: black;
+}
+
+.filled {
+  fill: var(--marketplaceColorPink);
+}
+
+.searchLink {
+  width: 100%;
+  margin-top: 25px;
+
+  /* Remove link's hover effect */
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (--viewportMedium) {
+  .searchLink {
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+/* A wrapper for a responsive image that holds it's aspect ratio */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  transition: var(--transitionStyleButton);
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: var(--boxShadowSectionLocationHover);
+  }
+}
+
+/* An image wrapper that defines the images aspect ratio */
+.aspectWrapper {
+  padding-bottom: calc(6 / 13 * 100%); /* 13:6 Aspect Ratio */
+
+  @media (--viewportMedium) {
+    padding-bottom: calc(2 / 3 * 100%); /* 3:2 Aspect Ratio */
+  }
+}
+
+.searchImage {
+  /* Layout - image will take space defined by aspect ratio wrapper */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.linkText {
+  @apply --marketplaceH2FontStyles;
+  color: var(--matterColor);
+  /* margin-top: 15px; */
+  margin-bottom: 0;
+
+  @media (--viewportMedium) {
+    margin-top: 21px;
+  }
+}
+
+.detailContainer {
+  padding: 0px 15px 0px;
+}
+
+.searchName {
+  color: var(--matterColorDark);
+}
+
+.reviewRatingStar {
+  height: 12px;
+  width: 12px;
+  margin-right: 2px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.mobileReviewRating {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 9px;
+
+  @media (--viewportMedium) {
+    display: none;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+.order {
+  /* @apply --marketplaceButtonStyles; */
+  padding: 0;
+  border-radius: 8px;
+  height: 40px !important;
+  width: 100px;
+  margin-right: 10px;
+  background-color: green;
+  border-color: green;
+  color: #fff;
+}
+.payment {
+  /* @apply --marketplaceButtonStyles; */
+  padding: 0;
+  border-radius: 8px;
+  height: 40px !important;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+}

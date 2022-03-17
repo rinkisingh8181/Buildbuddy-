@@ -35,6 +35,7 @@ import SortBy from './SortBy/SortBy';
 import SearchResultsPanel from './SearchResultsPanel/SearchResultsPanel';
 
 import css from './SearchPage.module.css';
+import ProductCard from '../LandingPage/ProductCard/ProductCard';
 
 const MODAL_BREAKPOINT = 768; // Search is in modal on mobile layout
 const SEARCH_WITH_MAP_DEBOUNCE = 300; // Little bit of debounce before search is initiated.
@@ -456,11 +457,13 @@ export class SearchPageComponent extends Component {
                   [css.newSearchInProgress]: !listingsAreLoaded,
                 })}
               >
-                {searchListingsError ? (
+                {false ? (
                   <h2 className={css.error}>
                     <FormattedMessage id="SearchPage.searchError" />
                   </h2>
-                ) : null}
+                ) : (
+                  <ProductCard />
+                )}
                 <SearchResultsPanel
                   className={css.searchListingsPanel}
                   listings={listings}

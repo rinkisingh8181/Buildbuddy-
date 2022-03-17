@@ -65,7 +65,7 @@
 .search {
   @apply --marketplaceH4FontStyles;
   @apply --TopbarDesktop_label;
-  color: var(--matterColor);
+  color: var(--purpleColor);
 }
 
 .topbarSearchWithLeftPadding {
@@ -90,7 +90,7 @@
   margin-bottom: 0;
 
   &:hover {
-    color: var(--marketplaceColorDark);
+    color: var(--purpleColor);
   }
 
   @media (--viewportMedium) {
@@ -203,7 +203,7 @@
   color: var(--matterColor);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--purpleColor);
   }
 }
 
@@ -216,7 +216,7 @@
   color: var(--matterColor);
 
   &:hover {
-    color: var(--matterColorDark);
+    color: var(--purpleColor);
   }
 }
 

@@ -82,7 +82,7 @@
 .heroSubTitle {
   @apply --marketplaceH4FontStyles;
 
-  color: rebeccapurple;
+  color: #663399;
   margin: 0 0 32px 0;
 
   composes: animation;

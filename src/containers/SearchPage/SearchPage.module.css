@@ -278,9 +278,9 @@
   }
 }
 
-.newSearchInProgress {
+/* .newSearchInProgress {
   opacity: 0.1;
-}
+} */
 
 .searchListingsPanel {
   flex-grow: 1;

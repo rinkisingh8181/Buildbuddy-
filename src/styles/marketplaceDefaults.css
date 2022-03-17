@@ -18,6 +18,7 @@
   /* ================ Colors ================ */
 
   --marketplaceColor: #0095b3;
+  --marketplaceColorPink: #d828b2;
   --marketplaceColorLight: #00bfe6;
   --marketplaceColorDark: #006a80; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
 
