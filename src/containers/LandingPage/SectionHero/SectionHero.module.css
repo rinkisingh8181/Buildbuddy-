@@ -72,6 +72,7 @@
 .heroMainTitle {
   @apply --marketplaceHeroTitleFontStyles;
   color: var(--matterColorLight);
+  font-weight: inherit;
 
   composes: animation;
   animation-delay: 0.5s;
