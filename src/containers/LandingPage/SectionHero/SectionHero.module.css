@@ -73,6 +73,7 @@
   @apply --marketplaceHeroTitleFontStyles;
   color: var(--matterColorLight);
   font-weight: inherit;
+  opacity: 1;
 
   composes: animation;
   animation-delay: 0.5s;
@@ -86,6 +87,7 @@
   @apply --marketplaceH4FontStyles;
 
   color: var(--matterColorLight);
+  font-size: medium;
   margin: 0 0 32px 0;
 
   composes: animation;
