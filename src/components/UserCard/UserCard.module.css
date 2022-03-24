@@ -14,7 +14,7 @@
 }
 
 .info {
-  flex: 1;
+  flex: 4;
 }
 
 .heading {
@@ -22,7 +22,7 @@
   margin: 20px 0 0 0;
 
   @media (--viewportMedium) {
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -86,7 +86,7 @@
 
 .headingRow {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   @media (--viewportMedium) {
     flex-direction: row;
