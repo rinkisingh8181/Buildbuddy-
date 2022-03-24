@@ -48,9 +48,11 @@
 
 .heroContent {
   margin: 0 24px 0 24px;
+  text-align: center;
 
   @media (--viewportMedium) {
     margin: 0 7.5vw 0 7.5vw;
+    text-align: center;
   }
 
   /* Special viewport for adjusting the heroContent's placement */
@@ -99,6 +101,12 @@
   composes: animation;
 
   animation-delay: 0.8s;
+  margin-left: 166px;
+  border-radius: 16px;
+
+  &:hover {
+    color: none;
+  }
 
   @media (--viewportMedium) {
     display: block;
