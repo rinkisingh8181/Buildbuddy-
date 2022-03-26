@@ -1,0 +1,92 @@
+@import '../../../styles/propertySets.css';
+
+
+.rootBackground{
+    padding: 2%;
+    background-color: #101C30;
+    height: 300px;
+}
+.title {
+  color: white;
+}
+
+.titleH1{
+    margin-bottom: -10px;
+}
+
+.titleH5{
+    margin-bottom: -10px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  gap: 10px;
+  margin-top: -200px;
+  @media (--viewportMedium) {
+    flex-direction: row;
+  }
+
+}
+
+.step {
+    display: flex;
+    border-radius: 10px;
+    background: url('../../../assets/background-1440.jpg');
+    height: 200px;
+    align-items: flex-end;
+    padding: 10px;
+    @media (--viewportMedium) {
+        width: 400px;
+        margin-right: 30px;
+    }
+    
+}
+
+
+
+.step:last-of-type {
+  @media (--viewportMedium) {
+    margin-right: 0;
+  }
+}
+
+
+
+.stepContaint{
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+}
+
+.stepContaint > h3{
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+    color:black;
+    margin-bottom: 5px;
+}
+
+.stepContaint > h3 > span{
+    color:#0095B3;
+}
+
+
+
+.stepContaint > p{
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: normal;
+    color: white;
+    margin: 0px;
+}
+
+.createListingLink {
+  margin-top: 18px;
+
+  @media (--viewportMedium) {
+    margin-top: 24px;
+  }
+}

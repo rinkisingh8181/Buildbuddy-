@@ -25,6 +25,7 @@ import SectionHero from './SectionHero/SectionHero';
 import SectionHowItWorks from './SectionHowItWorks/SectionHowItWorks';
 import SectionFilteredSearches from './SectionFilteredSearches/SectionFilteredSearches';
 import css from './LandingPage.module.css';
+import Discover from './Discover/Discover';
 
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
@@ -65,6 +66,13 @@ export const LandingPageComponent = props => {
             <SectionHero
               rootClassName={css.heroRoot}
               className={css.hero}
+              history={history}
+              location={location}
+            />
+          </div>
+          <div className={css.sections}>
+            <Discover
+              rootClassName={css.section}
               history={history}
               location={location}
             />
